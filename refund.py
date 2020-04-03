@@ -63,7 +63,12 @@ if __name__ == '__main__':
 
         plt.plot(years[1:], refunds[1:], color=color[i])
 
+    plt.xlabel("Year")
+    plt.ylabel("Accumulative refund")
+    plt.legend([2023, 2024, 2025, 2026, 2027, 2028])
+    plt.yscale("log")
+    plt.savefig("output/result.png", dpi=300)
     plt.show()
+
     df = df.drop(["refund", "year"], axis=1).reset_index()
-    print(df.head(30))
-    df.to_csv("retirement_refund.csv", index=False)
+    df.to_csv("output/retirement_refund.csv", index=False)
