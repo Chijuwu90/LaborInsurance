@@ -14,4 +14,4 @@ python refund.py
 
 # Output example 
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://https://github.com/Chijuwu90/LaborInsurance/blob/master/output/result.png)
